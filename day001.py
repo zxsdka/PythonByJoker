@@ -121,6 +121,58 @@ x22 = math.radians(x2)
 y22 = math.radians(y2)
 d = radius * math.acos(math.sin(x11) * math.sin(x22) + math.cos(x11) * math.cos(x22) * math.cos(y11-y22))
 print("两点之间距离 %fkm"%d)
+# #11.五角形的面积
+# import math
+# s = float(input('请输入五角形的边长：'))
+# Area = (5*s*s)/(4*math.tan(math.pi/5))
+# print('五角形的面积为：%f'%Area)
+
+
+
+
+# #12.一个正多边形的面积
+# import math
+# s = float(input('请输入正多边形的边长：'))
+# n = float(input('请输入多边形有几条边：'))
+# Area = (n*s*s)/(4*math.tan(math.pi/n))
+# print('正多边形的面积为：%f'%Area)
+
+
+
+# #13.找出ASCII码的字符3
+# a = int(input('请输入一个ASSCII码(0-127):'))
+# print(chr(a))
+
+
+# #14.工资表
+# name = input('Enter employee\'s name:\000\000') 
+# number = int(input('Enter number of hours worked in a week:\000\000')) 
+# pay = float(input('Enter hourly pay rate:\000\000')) 
+# federal = float(input('Enter federal tax withholding rate:\000\000')) 
+# state = float(input('Enter state tax withholding rate:\000\000')) 
+# print('Employee Name:\000'+name) 
+# print('Hours worked:\000%.1f'%(float(number))) 
+# print('Pay Rate:\000$'+str(pay)) 
+# print('Gross Pay:\000$'+str(number*pay)) 
+# print('Deductions:\n\000Federal Withholding(20.0%):\000$'+str(number*pay*0.2)+'\n\000State Withholding(9.0%):\000$'+ 
+# str(number*pay*0.09)+'\n\000Total Deduction:\000$%.2f'%((number*pay*0.2)+(number*pay*0.09))) 
+# print('Net Pay:\000$%.2f'%(((number*pay)-((number*pay*0.2)+(number*pay*0.09))))) 
+
+
+
+# #15.反向数字
+# a = input('请输入一个四位数整数：')
+# print(a[::-1])
+
+
+# #16.加密
+# import hashlib
+# m = hashlib.md5()
+# a = input('请输入字符串：')
+# m.update(bytes(a,encoding='utf8'))
+# with open('password.txt','w')as file:
+#     file.write(m.hexdigest())
+# print(m.hexdigest())
 
 
 
